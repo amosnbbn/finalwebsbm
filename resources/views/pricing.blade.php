@@ -47,66 +47,24 @@
 <section id="produk" class="produk section">
     <div class="container">
         <div class="row gy-4">
-            @php
-                $products = [
-                    [
-                        'name' => 'Corrugated Tube',
-                        'image' => 'cot.png',
-                        'desc' => 'Berbahan dasar Plastic Polypropelene (PP) yang diaplikasikan untuk melindungi kabel kelistrikan kendaraan bermotor dari gesekkan dan getaran serta suhu exterior yang lebih ekstrim.'
-                    ],
-                    [
-                        'name' => 'PVC Cover Connector',
-                        'image' => 'cover.png',
-                        'desc' => 'Terbuat dari bahan PVC Compond yang diaplikasikan untuk melindungi part Terminal, sambungan Soket, Fuse / Skring pada kendaraan bermotor. Sangat Tahan pada suhu < 120°c.'
-                    ],
-                    [
-                        'name' => 'Vinnyl Tube',
-                        'image' => 'vinyltube.png',
-                        'desc' => 'Berbahan PVC Compond yang diaplikasikan untuk melindungi kabel kelistrikan pada kendaraan dari gesekan dan getaran saat kendaraan beroperasi.'
-                    ],
-                    [
-                        'name' => 'Skun T-08643412',
-                        'image' => 'T-08643412.png',
-                        'desc' => 'Terbuat dari bahan logam kuningan terbaik untuk diaplikasikan pada ujung kabel kelistrikan sebagai penghantar listrik ke terminal lain.'
-                    ],
-                    [
-                        'name' => 'Skun T-10553712',
-                        'image' => 'T-10553712.png',
-                        'desc' => 'Terbuat dari bahan logam kuningan terbaik untuk diaplikasikan pada ujung kabel kelistrikan sebagai penghantar listrik ke terminal lain.'
-                    ],
-                    [
-                        'name' => 'Skun T-10543710',
-                        'image' => 'T-10543710.png',
-                        'desc' => 'Terbuat dari bahan logam kuningan terbaik untuk diaplikasikan pada ujung kabel kelistrikan sebagai penghantar listrik ke terminal lain.'
-                    ],
-                    [
-                        'name' => 'Skun T-12544515',
-                        'image' => 'T-12544515.png',
-                        'desc' => 'Terbuat dari bahan logam kuningan terbaik untuk diaplikasikan pada ujung kabel kelistrikan sebagai penghantar listrik ke terminal lain.'
-                    ],
-                    [
-                        'name' => 'Skun T-12543010',
-                        'image' => 'T-12543010.png',
-                        'desc' => 'Terbuat dari bahan logam kuningan terbaik untuk diaplikasikan pada ujung kabel kelistrikan sebagai penghantar listrik ke terminal lain.'
-                    ]
-                ];
-            @endphp
-
-            @foreach($products as $product)
+                        @foreach($products as $product)
                 <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="{{ asset('company/assets/img/produk/' . $product['image']) }}"
-                             alt="{{ $product['name'] }}"
-                             class="card-img-top product-img">
+                        <img src="{{ asset('storage/' . $product->image) }}"
+                            alt="{{ $product->name }}"
+                            class="card-img-top product-img">
                         <div class="card-body">
-                            <h5 class="card-title">{{ $product['name'] }}</h5>
-                            <p class="card-text">{{ $product['desc'] }}</p>
+                            <h5 class="card-title">{{ $product->name }}</h5>
+                            <p class="card-text">{{ $product->description ?? 'Deskripsi belum tersedia.' }}</p>
+                            @if ($product->price)
+                                <p class="fw-bold">Rp {{ number_format($product->price, 0, ',', '.') }}</p>
+                            @endif
                         </div>
                     </div>
                 </div>
             @endforeach
-        </div>
 
+    
         <!-- Marketplace Buttons -->
         <div class="text-center my-5">
             <h4 class="mb-4">Kunjungi Toko Kami di Marketplace:</h4>

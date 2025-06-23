@@ -17,9 +17,6 @@
                         class="{{ request()->is('portfolio') ? 'active' : '' }}">Portfolio</a></li> --}}
                 <li><a href="{{ url('/pricing') }}" class="{{ request()->is('pricing') ? 'active' : '' }}">Pricing</a>
                 </li>
-                <li><a href="{{ url('/presensi') }}"
-                        class="{{ request()->is('presensi') ? 'active' : '' }}">presensi</a>
-                </li>
 
                 <li><a href="{{ url('/contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
                 </li>
@@ -28,10 +25,10 @@
         </nav>
 
         <div class="header-social-links">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
+    <a href="https://www.facebook.com/profile.php?id=61559299543984" class="facebook" target="_blank">
+        <i class="bi bi-facebook"></i>
+    </a>
+</div>
+
     </div>
 </header>
