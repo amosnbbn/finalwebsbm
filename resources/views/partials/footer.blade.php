@@ -13,32 +13,29 @@
                     <p><strong>Email:</strong> <span>pelitafortuna_marketing@yahoo.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61559299543984" target="_blank"><i class="bi bi-facebook"></i></a>
+
                 </div>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Our Services</h4>
+                <h4>Our Products</h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="/pricing">Corrugated Tube</a></li>
+                    <li><a href="/pricing">Vinnyl Tube</a></li>
+                    <li><a href="/pricing">PVC Cover Connector</a></li>
+                    <li><a href="/pricing">Skun T-08643412</a></li>
+
                 </ul>
             </div>
 

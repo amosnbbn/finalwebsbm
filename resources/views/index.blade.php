@@ -102,7 +102,6 @@
 <section id="clients" class="clients section">
     <div class="container section-title" data-aos="fade-up">
         <h2>Clients</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">

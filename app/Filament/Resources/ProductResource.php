@@ -15,6 +15,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Actions;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Forms\Components\Textarea;
+
 
 class ProductResource extends Resource
 {
@@ -31,7 +33,11 @@ class ProductResource extends Resource
                 ->image()
                 ->directory('products')
                 ->maxSize(2048)
-                ->visibility('public'),      
+                ->visibility('public'),
+            Textarea::make('description')
+            ->label('Deskripsi Produk')
+            ->rows(5)
+            ->columnSpanFull(),      
 
         ]);
     }
@@ -42,6 +48,7 @@ class ProductResource extends Resource
             ->columns([
                 TextColumn::make('name')->sortable()->searchable(),
                 TextColumn::make('price')->money('idr', true),
+                TextColumn::make('description')->limit(50),
                 ImageColumn::make('image'),
             ])
             ->filters([
