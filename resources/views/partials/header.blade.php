@@ -1,8 +1,8 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
         <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto">
-            <img src="{{ asset('Company/assets/img/logo.png') }}" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
-            <h1 class="sitename">Pelita Fortuna</h1><span>.</span>
+            <img src="{{ asset('Company/assets/img/SBM.png') }}" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
+            <h1 class="sitename">Sukses Bersama Mulia</h1><span>.</span>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -25,7 +25,7 @@
         </nav>
 
         <div class="header-social-links">
-    <a href="https://www.facebook.com/profile.php?id=61559299543984" class="facebook" target="_blank">
+    <a href="https://www.facebook.com/share/19D3ADGNtK/" class="facebook" target="_blank">
         <i class="bi bi-facebook"></i>
     </a>
 </div>

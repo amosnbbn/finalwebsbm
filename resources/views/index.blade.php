@@ -9,28 +9,28 @@
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-            <img src="{{ asset('Company/assets/img/hero-carousel/hero-carousel-1.jpg') }}" alt="">
+            <img src="{{ asset('Company/assets/img/hero-carousel/SBMLUAR.jpg') }}" alt="">
             <div class="container">
                 <h2>Welcome</h2>
-                <p>PT Pelita Fortuna merupakan perusahaan yang bergerak di bidang perdagangan dan distribusi berbagai jenis barang, mencakup kebutuhan industri hingga produk konsumsi.</p>
+                <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga. </p>
                 <a href="{{ route('about') }}" class="btn-get-started">Read More</a>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img src="{{ asset('Company/assets/img/hero-carousel/hero-carousel-2.jpg') }}" alt="">
+            <img src="{{ asset('Company/assets/img/hero-carousel/SBMDALAM1.jpg') }}" alt="">
             <div class="container">
                 <h2>Welcome</h2>
-                <p>PT Pelita Fortuna merupakan perusahaan yang bergerak di bidang perdagangan dan distribusi berbagai jenis barang, mencakup kebutuhan industri hingga produk konsumsi.</p>
+                <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga..</p>
                 <a href="{{ route('about') }}" class="btn-get-started">Read More</a>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img src="{{ asset('Company/assets/img/hero-carousel/hero-carousel-3.jpg') }}" alt="">
+            <img src="{{ asset('Company/assets/img/hero-carousel/SBMDALAM2.jpg') }}" alt="">
             <div class="container">
                 <h2>Welcome</h2>
-                <p>PT Pelita Fortuna merupakan perusahaan yang bergerak di bidang perdagangan dan distribusi berbagai jenis barang, mencakup kebutuhan industri hingga produk konsumsi.</p>
+                <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga..</p>
                 <a href="{{ route('about') }}" class="btn-get-started">Read More</a>
             </div>
         </div>

@@ -702,8 +702,8 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: white; /* atau sesuaikan jika perlu */
+  background-color: #228B22; /* hijau dari logo */
   padding: 25px 0;
   position: relative;
 }
@@ -1003,21 +1003,40 @@ section,
 .about ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  margin: 0;
 }
 
 .about ul li {
-  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+.about ul .item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about ul i {
   font-size: 1.25rem;
-  margin-right: 0.5rem;
-  line-height: 1.2;
-  color: var(--accent-color);
+  margin-right: 10px;
+  margin-top: 4px;
+  color: var(--accent-color); /* hijau */
 }
+
+.about ul .content {
+  max-width: 600px;
+}
+
+.about ul .content strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.about ul .content p {
+  margin: 0;
+  text-align: justify;
+}
+
 
 .about .watch-video i {
   font-size: 2rem;

@@ -21,7 +21,7 @@
 <section id="contact" class="contact section">
     <div class="mb-5">
         <iframe style="width: 100%; height: 400px;"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.059626524413!2d106.6797228!3d-6.07888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a03ff273245ff%3A0xb2d2bcab62f588d4!2sPT.%20Pelita%20Fortuna!5e0!3m2!1sen!2sid!4v1716887613589!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1561174875255!2d106.6105414!3d-6.165952399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff39a56b95f9%3A0x45be7edc392bb26d!2sJl.%20Raya%20Benua%20Indah%20No.88%2C%20Karawaci%2C%20Tangerang!5e0!3m2!1sen!2sid!4v1719151715000!5m2!1sen!2sid"
             frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div><!-- End Google Maps -->
@@ -36,21 +36,21 @@
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h4>Location:</h4>
-                            <p>Jl. Raya Salembaran, Salembaran, Kec. Kosambi, Kabupaten Tangerang, Banten 15213</p>
+                            <p>Jl. Benua Indah Raya No. 88 Kelurahan Pabuaran Tumpeng, Kecamatan Karawaci, Tangerang 15112</p>
                         </div>
                     </div>
                     <div class="info-item d-flex">
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h4>Email:</h4>
-                            <p>pelitafortuna_marketing@yahoo.com</p>
+                            <p>sbmuliamarketing@yahoo.com</p>
                         </div>
                     </div>
                     <div class="info-item d-flex">
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                             <h4>Call:</h4>
-                            <p>+6221 559 337 77</p>
+                            <p>02155733382</p>
                         </div>
                     </div>
                 </div>

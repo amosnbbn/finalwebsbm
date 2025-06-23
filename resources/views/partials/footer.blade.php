@@ -7,13 +7,13 @@
                     <span class="sitename">Company</span>
                 </a>
                 <div class="footer-contact pt-3">
-                    <p>Jl. Raya Salembaran No. 99, Blok FF</p>
-                    <p>Kel. Cengklong, Kec. Kosambi, Tangerang 15213</p>
-                    <p class="mt-3"><strong>Phone:</strong> <span>+6221 559 337 77</span></p>
-                    <p><strong>Email:</strong> <span>pelitafortuna_marketing@yahoo.com</span></p>
+                    <p>Jl. Benua Indah Raya No. 88</p>
+                    <p>Kelurahan Pabuaran Tumpeng, Kecamatan Karawaci, Tangerang 15112</p>
+                    <p class="mt-3"><strong>Phone:</strong> <span>02155733382</span></p>
+                    <p><strong>Email:</strong> <span>sbmulia.marketing@yahoo.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
-                    <a href="https://www.facebook.com/profile.php?id=61559299543984" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/share/19D3ADGNtK/" target="_blank"><i class="bi bi-facebook"></i></a>
 
                 </div>
             </div>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Pelita Fortuna</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sukses Bersama Mulia</strong> <span>All Rights Reserved</span></p>
     </div>
 
 </footer>

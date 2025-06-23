@@ -26,22 +26,16 @@
             </div>
 
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="inner-title">PT Pelita Fortuna</h2>
+                <h2 class="inner-title">PT Sukes Bersama Mulia</h2>
                 <div class="our-story">
-                    <h4>Est 1988</h4>
+                    <h4>Est 2012</h4>
                     <h3>Our Story</h3>
-                    <p>Perusahaan kami bergerak di bidang perdagangan dan distribusi komponen kelistrikan kendaraan. 
-                        Produk-produk yang kami salurkan menggunakan material berkualitas tinggi seperti PVC lunak, 
-                        Polypropylene, dan kuningan tembaga. Kami memastikan setiap produk yang kami distribusikan 
-                        telah melalui proses kontrol kualitas yang ketat dan dibekali dengan standar inspeksi keselamatan
-                         kerja sesuai dengan regulasi pemerintah.</p> 
-                    <p>Sebagai mitra distribusi, kami mendukung kebutuhan 
-                         berbagai perusahaan Wiring Harness lokal yang digunakan pada sepeda motor, mobil, serta 
-                         diaplikasikan dalam sistem kelistrikan kendaraan seperti alarm, central lock, dan sistem kelistrikan lainnya.</p>
+                    <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga. </p> 
+                    <p>Tenaga kerja kami terdiri dari para profesional berkualifikasi tinggi yang telah di bekali standar inspeksi keselamatan kerja yang disesuaikan dengan peraturan pemerintah. Perusahaan kami merupakan salah satu pendukung distributor lokal perusahaan Wiring Harness pada sepeda motor, mobil, yang di aplikasikan dalam sistem kelistrikan kendaraan, alarm, central locks, dan beberapa sistem kelistrikan lainnya..</p>
                     <ul>
                         <li>
                             <i class="bi bi-check-circle"></i>
-                            <strong>Fokus pada Pelanggan</strong><br>Menyediakan produk berkualitas tinggi dan memberikan layanan yang prima.
+                            <strong>Fokus pada Pelanggan</strong><br>Kualitas Produk Sesuai Dengan Standar Pelanggan.
                         </li>
                         <li>
                             <i class="bi bi-check-circle"></i>
@@ -49,8 +43,8 @@
                         </li>
                         <li>
                             <i class="bi bi-check-circle"></i>
-                            <strong>Penciptaan Nilai</strong><br>Menciptakan nilai bagi seluruh pemangku kepentingan: pelanggan, prinsipal, staf, dan pemegang saham.
-                        </li>
+                            <strong>Penciptaan Nilai</strong><br>Menjamin Ketersediaan Produk Sesuai Forecast Dan Siap Jika Ada Perubahan Kebutuhan   
+
                     </ul>
                     <div class="watch-video d-flex align-items-center position-relative mt-3">
                         <i class="bi bi-play-circle"></i>
@@ -67,18 +61,18 @@
     <div class="container" data-aos="fade-up">
         <div class="section-title text-center mb-5">
             <h2>Visi & Misi</h2>
-            <p>Komitmen Kami untuk Menjadi Mitra Terbaik Anda</p>
+            <p>We love our customers, so feel free to visit during normal business hours</p>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="card shadow-sm border-0 p-4 rounded bg-white">
                     <h4 class="text-primary"><i class="bi bi-eye"></i> Visi</h4>
                     <p class="mb-4">
-                        Menjadi perusahaan perdagangan dan distribusi terpercaya di tingkat nasional dan internasional yang inovatif, adaptif, serta memberikan nilai tambah yang berkelanjutan bagi pelanggan dan mitra bisnis.
+                        Fokus pada peningkatan pelayanan yang terstruktur dan terorganisir serta selalu berinovasi meningkatkan kualitas.
                     </p>
                     <h4 class="text-success"><i class="bi bi-bullseye"></i> Misi</h4>
                     <p>
-                        Menyediakan produk-produk berkualitas tinggi yang sesuai dengan kebutuhan industri dan konsumen.
+                       Memberi pelayanan terbaik dengan pengembangan produk dan system kerja yang efektif dan efisien.
                     </p>
                 </div>
             </div>
