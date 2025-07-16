@@ -4,123 +4,127 @@
 
 @section('content')
 
-<!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
-    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+<!-- Hero Section Custom -->
+<section id="hero-custom" class="d-flex align-items-center" style="height: 100vh; background: linear-gradient(to right,rgb(73, 255, 73),rgb(25, 28, 26)); color: white; position: relative;">
+  <div class="container">
+    <div class="row align-items-center">
 
-        <div class="carousel-item active">
-            <img src="{{ asset('Company/assets/img/hero-carousel/SBMLUAR.jpg') }}" alt="">
-            <div class="container">
-                <h2>Welcome</h2>
-                <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga. </p>
-                <a href="{{ route('about') }}" class="btn-get-started">Read More</a>
-            </div>
+      <!-- KIRI: Informasi Perusahaan -->
+      <div class="col-md-6 mb-5 mb-md-0">
+        <h5 style="font-size: 2.5rem;letter-spacing: 2px; text-transform: uppercase; color: #ffffff; font-weight: 800; font-family: 'Poppins', sans-serif;">
+          PT. SUKSES BERSAMA MULIA
+        </h5>
+        <h1 class="fw-bold mb-4" style="font-size: 2.0rem; line-height: 1.4; color: #ffffff; font-family: 'Poppins', sans-serif;">
+          Perusahaan manufacture<br>spesialis wiring harness
+        </h1>
+
+        <a href="{{ route('about') }}" class="btn rounded-pill px-4 py-2 mb-4" style="background-color: #00c853; color: white;">Read More</a>
+
+        <div class="d-flex align-items-center gap-3">
+          <div class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div>
+            <small>Email</small><br>
+            <span>marketing@suksesbersamamulia.com</span>
+          </div>
         </div>
+      </div>
 
-        <div class="carousel-item">
-            <img src="{{ asset('Company/assets/img/hero-carousel/SBMDALAM1.jpg') }}" alt="">
-            <div class="container">
-                <h2>Welcome</h2>
-                <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga..</p>
-                <a href="{{ route('about') }}" class="btn-get-started">Read More</a>
-            </div>
+      <!-- KANAN: Gambar Produk Bergantian -->
+      <div class="col-md-6 text-center position-relative">
+        <div class="produk-slider glass-box rounded-4 p-3 shadow-lg position-relative" style="height: 400px;">
+          <img src="{{ asset('Company/assets/img/produk/cot.png') }}" class="produk-item img-fluid position-absolute top-0 start-50 translate-middle-x active" style="max-height: 400px;" alt="Produk 1">
+          <img src="{{ asset('Company/assets/img/produk/cover.png') }}" class="produk-item img-fluid position-absolute top-0 start-50 translate-middle-x" style="max-height: 400px;" alt="Produk 2">
+          <img src="{{ asset('Company/assets/img/produk/vinyltube.png') }}" class="produk-item img-fluid position-absolute top-0 start-50 translate-middle-x" style="max-height: 400px;" alt="Produk 3">
         </div>
+      </div>
 
-        <div class="carousel-item">
-            <img src="{{ asset('Company/assets/img/hero-carousel/SBMDALAM2.jpg') }}" alt="">
-            <div class="container">
-                <h2>Welcome</h2>
-                <p>Perusahaan ini mengkhususkan pada pembuatan komponen kelistrikan kendaraan menggunakan bahan seperti PVC lunak, Polypropelene, dan Kuningan tembaga..</p>
-                <a href="{{ route('about') }}" class="btn-get-started">Read More</a>
-            </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-        <ol class="carousel-indicators"></ol>
     </div>
+  </div>
 </section>
-<!-- /Hero Section -->
-
-<!-- Services Section -->
-<section id="services" class="services section light-background">
-    <div class="container">
-        <div class="row gy-4">
-            <!-- Service Item 1 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item item-cyan position-relative">
-                    <div class="icon">
-                        <img src="{{ asset('Company/assets/img/produk/cot.png') }}" alt="Icon"
-                            style="width: 100px; height: 100px; border-radius: 50%;">
-                    </div>
-                    <a href="{{ route('pricing') }}" class="stretched-link">
-                        <h3>Corrugated Tube</h3>
-                    </a>
-                    <p>Berbahan dasar Plastic Polypropelene (PP) yang diaplikasikan untuk melindungi kabel kelistrikan kendaraan bermotor dari gesekkan dan getaran serta suhu exterior yang lebih ekstrim.</p>
-                </div>
-            </div>
-
-            <!-- Service Item 2 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item item-cyan position-relative">
-                    <div class="icon">
-                        <img src="{{ asset('Company/assets/img/produk/cover.png') }}" alt="Icon"
-                            style="width: 100px; height: 100px; border-radius: 50%;">
-                    </div>
-                    <a href="{{ route('pricing') }}" class="stretched-link">
-                        <h3>PVC Cover Connector</h3>
-                    </a>
-                    <p>Terbuat dari bahan PVC Compound yang diaplikasikan untuk melindungi part Terminal, sambungan Soket, Fuse / Skring pada kendaraan bermotor.</p>
-                </div>
-            </div>
-
-            <!-- Service Item 3 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item item-cyan position-relative">
-                    <div class="icon">
-                        <img src="{{ asset('Company/assets/img/produk/vinyltube.png') }}" alt="Icon"
-                            style="width: 100px; height: 100px; border-radius: 50%;">
-                    </div>
-                    <a href="{{ route('pricing') }}" class="stretched-link">
-                        <h3>Vinnyl Tube</h3>
-                    </a>
-                    <p>Berbahan PVC Compound yang diaplikasikan untuk melindungi kabel kelistrikan dari gesekan dan getaran saat kendaraan beroperasi.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Services Section -->
 
 <!-- Clients Section -->
-<section id="clients" class="clients section">
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Clients</h2>
-    </div>
+<section class="clients-section section py-5 bg-light">
+  <div class="container text-center mb-4">
+    <h2 class="clients-title fw-bold" style="font-size: 2rem;">Clients</h2>
+  </div>
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-0 clients-wrap">
-            <div class="col-xl-3 col-md-4 client-logo">
-                <img src="{{ asset('Company/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">
-            </div>
-            <div class="col-xl-3 col-md-4 client-logo">
-                <img src="{{ asset('Company/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
-            </div>
-            <div class="col-xl-3 col-md-4 client-logo">
-                <img src="{{ asset('Company/assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
-            </div>
-            <div class="col-xl-3 col-md-4 client-logo">
-                <img src="{{ asset('Company/assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
-            </div>
+  <div class="clients overflow-hidden">
+    <div class="clients-track d-flex align-items-center" style="animation: slideLeft 20s linear infinite;">
+      @foreach(range(1,4) as $i)
+        <div class="client-logo px-5">
+          <img src="{{ asset('Company/assets/img/clients/client-' . $i . '.png') }}" alt="Client {{ $i }}" style="height: 80px;">
         </div>
+      @endforeach
+      @foreach(range(1,4) as $i)
+        <div class="client-logo px-5">
+          <img src="{{ asset('Company/assets/img/clients/client-' . $i . '.png') }}" alt="Client {{ $i }}" style="height: 80px;">
+        </div>
+      @endforeach
     </div>
+  </div>
 </section>
-<!-- /Clients Section -->
+
+<!-- CSS Animations -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  .produk-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.6s ease;
+    transform: scale(0.95);
+  }
+
+  .produk-item.active {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  .produk-slider.glass-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .produk-slider.glass-box:hover {
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    transform: scale(1.01);
+  }
+
+  .clients-track {
+    display: flex;
+    width: max-content;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<!-- JS for Product Fade -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.produk-item');
+    let current = 0;
+
+    setInterval(() => {
+      items[current].classList.remove('active');
+      current = (current + 1) % items.length;
+      items[current].classList.add('active');
+    }, 4000); // setiap 4 detik
+  });
+</script>
 
 @endsection

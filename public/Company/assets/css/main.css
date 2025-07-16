@@ -154,71 +154,220 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 10px 0;
+  padding: 20px 0 10px; /* Turun sedikit ke bawah */
   transition: all 0.5s;
   z-index: 997;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.header .logo {
-  line-height: 1;
-}
-
+/* Logo besar & interaktif */
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  height: 70px;
+  width: auto;
+  margin-right: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 5px 8px rgba(0, 128, 0, 0.4));
+  cursor: pointer;
 }
 
+.header .logo img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 10px 20px rgba(0, 128, 0, 0.6));
+}
+
+/* Nama Perusahaan */
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0 10px; /* Header agak turun */
+  transition: all 0.5s;
+  z-index: 997;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo Besar & Tetap Interaktif */
+.header .logo img {
+  height: 90px; /* Ukuran diperbesar */
+  width: auto;
+  margin-right: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 5px 10px rgba(0, 128, 0, 0.4));
+  cursor: pointer;
+}
+
+.header .logo img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 10px 20px rgba(0, 128, 0, 0.6));
+}
+
+/* Teks Nama Perusahaan */
 .header .logo h1 {
-  font-size: 26px;
+  font-size: 36px; /* Diperbesar */
   margin: 0;
   font-weight: 700;
-  text-transform: uppercase;
   color: var(--heading-color);
+  line-height: 1.2;
 }
 
 .header .logo span {
-  color: var(--accent-color);
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
+  color: var(--accent-color);
 }
 
+/* Navigasi */
+.header .navmenu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .navmenu ul li a {
+  font-size: 18px; /* Ukuran teks nav diperbesar */
+  color: var(--default-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 8px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.header .navmenu ul li a:hover,
+.header .navmenu ul li a.active {
+  color: #0d7a0c;
+  border-bottom: 2px solid #0d7a0c;
+}
+
+/* Sosial Media Icon - Facebook */
 .header .header-social-links {
-  padding: 0 0 0 15px;
+  padding-left: 15px;
 }
 
 .header .header-social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding-left: 10px;
+  font-size: 28px; /* Facebook icon besar */
+  color: #1877f2;
   display: inline-block;
-  transition: 0.3s;
-  font-size: 16px;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .header .header-social-links a:hover {
-  color: var(--accent-color);
+  color: #0a5edb;
+  transform: scale(1.2);
 }
 
-.header .header-social-links a i {
-  line-height: 0px;
-}
-
+/* Responsif */
 @media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
+  .header .logo img {
+    height: 60px;
   }
 
+  .header .logo h1,
+  .header .logo span {
+    font-size: 26px;
+  }
+
+  .header .navmenu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .header-social-links a {
+    font-size: 24px;
+  }
+}
+
+/* Navbar Styling */
+.navbar-custom {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 999;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 128, 0, 0.4));
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.nav-list a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: #0a7a0c;
+  border-bottom: 2px solid #0a7a0c;
+}
+
+/* Facebook Icon */
+.social-icons a {
+  font-size: 24px;
+  color: #1877f2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0a5edb;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 18px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .logo-img {
+    width: 45px;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
   .header .logo h1 {
     font-size: 24px;
   }
 
-  .header .header-social-links {
-    order: 2;
-    padding: 0 15px 0 0;
+  .header .logo img {
+    height: 50px;
   }
 
-  .header .navmenu {
-    order: 3;
+  .header .navmenu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .header-social-links a {
+    font-size: 22px;
   }
 }
 
@@ -1310,12 +1459,23 @@ section,
   bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients .clients-wrap {
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+.clients {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--surface-color);
+  padding: 40px 0;
+}
+
+.clients .clients-track {
+  display: flex;
+  width: max-content;
+  animation: scrollClients 25s linear infinite;
+  gap: 60px;
 }
 
 .clients .client-logo {
@@ -1323,27 +1483,55 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   overflow: hidden;
 }
 
 .clients .client-logo img {
-  padding: 50px;
-  max-width: 80%;
-  transition: 0.3s;
+  max-width: 100%;
+  max-height: 100px;
+  padding: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  display: block;
 }
 
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    padding: 30px;
-    max-width: 50%;
-  }
-}
 
 .clients .client-logo:hover img {
   transform: scale(1.1);
 }
+
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .clients .client-logo {
+    width: 150px;
+  }
+
+  .clients .client-logo img {
+    padding: 30px;
+    max-width: 50%;
+  }
+
+  .clients .clients-track {
+    animation-duration: 40s;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Skills Section

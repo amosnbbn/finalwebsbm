@@ -15,7 +15,7 @@
                 </li>
                 {{-- <li><a href="{{ url('/portfolio') }}"
                         class="{{ request()->is('portfolio') ? 'active' : '' }}">Portfolio</a></li> --}}
-                <li><a href="{{ url('/pricing') }}" class="{{ request()->is('pricing') ? 'active' : '' }}">Pricing</a>
+                
                 </li>
 
                 <li><a href="{{ url('/contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
