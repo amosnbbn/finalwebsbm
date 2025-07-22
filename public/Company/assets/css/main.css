@@ -148,6 +148,100 @@ h6 {
   }
 }
 
+/*parallax*/
+.parallax {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax .layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  width: 120%; /* pastikan gambar selebar viewport */
+  height: auto;
+  max-width: none;
+  pointer-events: none; /* supaya tidak mengganggu klik */
+}
+
+.parallax img.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+  width: 120%; /* agar menutupi lebih lebar dari layar */
+  pointer-events: none;
+}
+
+/* .parallax {
+  overflow: hidden;
+}
+.parallax .layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  will-change: transform;
+  transform: translate(-50%, -50%);
+}
+.parallax .layer img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+} */
+
+
+/*index*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  .produk-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.6s ease;
+    transform: scale(0.95);
+  }
+
+  .produk-item.active {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  .produk-slider.glass-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .produk-slider.glass-box:hover {
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    transform: scale(1.01);
+  }
+
+  .clients-track {
+    display: flex;
+    width: max-content;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/

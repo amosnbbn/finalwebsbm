@@ -5,8 +5,20 @@
 @section('content')
 
 <!-- Hero Section Custom -->
-<section id="hero-custom" class="d-flex align-items-center" style="height: 100vh; background: linear-gradient(to right,rgb(73, 255, 73),rgb(25, 28, 26)); color: white; position: relative;">
-  <div class="container">
+<section id="hero-custom" class="d-flex align-items-center position-relative" style="height: 100vh; overflow: hidden;">
+  <!-- 🔹 Parallax Background -->
+  <div class="parallax position-absolute top-0 start-0 w-100 h-100" style="z-index: 0; pointer-events: none;">
+    <img src="{{ asset('Company/assets/img/dekorasi/hill1.png') }}" class="layer" data-speed="0.2">
+    <img src="{{ asset('Company/assets/img/dekorasi/hill2.png') }}" class="layer" data-speed="0.4">
+    <img src="{{ asset('Company/assets/img/dekorasi/hill3.png') }}" class="layer" data-speed="0.4">
+    <img src="{{ asset('Company/assets/img/dekorasi/hill4.png') }}" class="layer" data-speed="0.4">
+    <img src="{{ asset('Company/assets/img/dekorasi/hill5.png') }}" class="layer" data-speed="0.4">
+    <img src="{{ asset('Company/assets/img/dekorasi/leaf.png') }}" class="layer" data-speed="0.4">
+    <img src="{{ asset('Company/assets/img/dekorasi/plant.png') }}" class="layer" data-speed="0.4">
+    <img src="{{ asset('Company/assets/img/dekorasi/tree.png') }}" class="layer mouse-parallax" data-speed="0.5">
+  </div>
+
+  <div class="container position-relative" style="z-index: 2;">
     <div class="row align-items-center">
 
       <!-- KIRI: Informasi Perusahaan -->
@@ -66,53 +78,6 @@
   </div>
 </section>
 
-<!-- CSS Animations -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-  .produk-item {
-    opacity: 0;
-    transition: opacity 1s ease-in-out, transform 0.6s ease;
-    transform: scale(0.95);
-  }
-
-  .produk-item.active {
-    opacity: 1;
-    transform: scale(1.05);
-    z-index: 2;
-  }
-
-  .produk-slider.glass-box {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-
-  .produk-slider.glass-box:hover {
-    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.08);
-    transform: scale(1.01);
-  }
-
-  .clients-track {
-    display: flex;
-    width: max-content;
-  }
-
-  @keyframes slideLeft {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-</style>
-
 <!-- JS for Product Fade -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -126,5 +91,42 @@
     }, 4000); // setiap 4 detik
   });
 </script>
+
+<!-- Parallax -->
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const layers = document.querySelectorAll(".layer");
+
+  document.addEventListener("mousemove", function (e) {
+    const x = (window.innerWidth / 2 - e.pageX);
+    const y = (window.innerHeight / 2 - e.pageY);
+
+    layers.forEach(layer => {
+      const speed = layer.getAttribute("data-speed");
+      const moveX = (x * speed) / 100;
+      const moveY = (y * speed) / 100;
+
+      layer.style.transform = `translate(calc(-50% + ${moveX}px), calc(-50% + ${moveY}px))`;
+    });
+  });
+
+  // Optional: Tambah scroll effect juga
+  document.addEventListener("scroll", function () {
+    const scrollTop = window.scrollY;
+    layers.forEach(layer => {
+      const speed = layer.getAttribute("data-speed");
+      const moveY = scrollTop * speed;
+      const currentTransform = layer.style.transform;
+
+      // Ambil nilai translateX saat ini, lalu gabungkan dengan translateY scroll
+      const matchX = currentTransform.match(/translate\(calc\(-50%\s*\+\s*(.*?)px\)/);
+      const moveX = matchX ? matchX[1] : 0;
+
+      layer.style.transform = `translate(calc(-50% + ${moveX}px), calc(-50% + ${moveY}px))`;
+    });
+  });
+});
+</script>
+
 
 @endsection
